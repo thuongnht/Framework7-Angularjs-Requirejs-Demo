@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Seed App</title>
+		<link href="style/css/app.css" rel="stylesheet">
+		<link href="style/css/animations.css" rel="stylesheet">
+		<script data-main="scripts/main" src="libs/require.js"></script>
+	</head>
+	<body>
+	<div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal">
+    <div class="content-block">
+      <p>Left Panel content here</p>
+      <!-- Click on link with "close-panel" class will close panel -->
+      <p><a class="close-panel">Close me</a></p>
+    </div>
+    </div>
+
+<div class="views">
+
+  <div class="view view-main navbar-fixed">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"> <a class="link icon-only open-panel"><i class="icon icon-bars-white"></i></a> </div>
+        <div class="center sliding contacts-list-header">Seed App</div>
+        <div class="right"> </div>
+      </div>
+    </div>
+    <div class="pages">
+      <div data-page="list" class="page">
+        <div class="slide-animation page-content" ng-view ></div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+              Logout
+            </div>
+        </div>          
+        <!-- /End of Bottom Toolbar-->
+      </div>
+    </div>
+  </div>
+</div>
+
+	</body>
+</html>
